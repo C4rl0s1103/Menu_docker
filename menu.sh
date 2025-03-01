@@ -13,7 +13,7 @@ install_docker() {
     sudo apt update
     sudo apt install curl -y
 
-    echo -e "${GREEN}Instalación de docker docker${NC}"
+    echo -e "${GREEN}Instalación de docker${NC}"
     sudo curl -fsSL https://get.docker.com -o get-docker.sh
     sudo sh get-docker.sh
     sudo usermod -aG docker $USER
